@@ -1,0 +1,41 @@
+@use "../../styles/global/mixins.scss" as *;
+
+.header {
+    padding: 24px 0;
+
+    &__wrapper {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+
+        @media (width <=800) {
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        width: 143px;
+        height: 32px;
+
+        @include vp-1024 {
+            svg {
+                width: 120px;
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        max-width: 908px;
+        width: 100%;
+        position: relative;
+
+        @media (width <=800) {
+            justify-content: unset;
+            width: unset;
+        }
+    }
+}

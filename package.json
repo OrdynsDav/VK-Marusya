@@ -1,0 +1,32 @@
+{
+  "name": "vk-marusya",
+  "version": "1.0.0",
+  "description": "Это итоговый проект по курсу React",
+  "license": "ISC",
+  "author": "David",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "next": "^16.0.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-intersection-observer": "^10.0.0",
+    "sass": "^1.94.2",
+    "zod": "^4.1.13",
+    "zustand": "^5.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "baseline-browser-mapping": "^2.9.11",
+    "typescript": "5.9.3"
+  }
+}

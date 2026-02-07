@@ -1,0 +1,49 @@
+.genres {
+    padding-top: 64px;
+
+    &__title {
+        font-size: 48px;
+        line-height: 56px;
+        margin: 0 0 64px;
+
+        @media (width < 490) {
+            font-size: 32px;
+            line-height: 36px;
+            margin: 0 0 52px;
+        }
+
+        @media (width <=375) {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0 0 40px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 64px 40px;
+
+        @media (width < 490) {
+            gap: 48px;
+        }
+
+        @media (width <=375) {
+            gap: 24px;
+        }
+    }
+
+    &__item {
+        height: 304px;
+        border-radius: 24px;
+        background-color: var(--color-black);
+        box-shadow: 0px 0px 80px 0px var(--color-light-gray);
+        border: 1px solid var(--color-light-gray);
+
+        @media (1294 > width > 1005) {
+            &:last-child {
+                grid-column: span 2;
+            }
+        }
+    }
+}

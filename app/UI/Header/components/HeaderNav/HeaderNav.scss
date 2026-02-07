@@ -1,0 +1,65 @@
+@use "../../../../styles/global/mixins.scss" as *;
+
+.nav {
+    display: flex;
+    gap: 40px;
+
+    @media (width <=800) {
+        gap: 20px;
+    }
+
+    &__item {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 8px 0;
+        height: 48px;
+        border-bottom: 1.5px solid transparent;
+        transition: border-bottom 0.3s ease-in;
+
+        @include vp-1024 {
+            font-size: 20px;
+            line-height: 24px;
+            height: 40px;
+        }
+
+        @media (width <=800) {
+            display: none;
+        }
+
+        &--active {
+            border-bottom: 1.5px solid var(--color-heliotrope);
+        }
+
+        &--tablet {
+            display: none;
+            height: 24px;
+            color: var(--primary-text-color);
+            padding: 0;
+            border: none;
+
+            @media (width <=800) {
+                display: block;
+            }
+
+            svg {
+                color: var(--color-white);
+            }
+        }
+
+        &-icon:first-child {
+            display: none;
+        }
+
+        &--profile {
+            .nav__item-icon {
+                &:first-child {
+                    display: block;
+                }
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}

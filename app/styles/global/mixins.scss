@@ -1,0 +1,5 @@
+@mixin vp-1024 {
+    @media (width <= 1024px) {
+        @content;
+    }
+};

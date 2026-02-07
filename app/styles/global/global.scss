@@ -1,0 +1,98 @@
+:root {
+    --global-font-family: 'Play', "Arial", sans-serif;
+    --primary-text-color: #FFFFFF;
+    --color-white: #FFFFFF;
+    --color-gray: #ffffff80;
+    --color-white-2: #FFFFFFCC;
+    --color-light-gray: #FFFFFF40;
+    --color-dim-gray: #747474;
+    --color-grey: #777777;
+    --secondary-text-color: #ffffffb2;
+    --primary-btn-color: #67A5EB;
+    --color-montana: #393B3C;
+    --color-forest-green: #308E21;
+    --color-black: #000000;
+    --color-black-2: #00000080;
+    --color-black-3: #0A0B0BE5;
+    --color-heliotrope: #DC5DFC;
+    --color-salmon: #FF7575;
+    --color-lucky: #A59400;
+    --color-east-bay: #45526E;
+    --color-fire-brick: #C82020;
+    --color-perano: #B4A9FF;
+    --color-slate-blue: #6A5DC2;
+    --transition: 0.2s ease-in;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--global-font-family);
+    color: var(--primary-text-color);
+    background: linear-gradient(180deg, #000000 0%, rgba(39, 36, 36, 0.7) 100%),
+        linear-gradient(178.73deg, rgba(39, 135, 245, 0.18) -17.53%, rgba(163, 147, 245, 0.18) 131.74%);
+    background-blend-mode: overlay;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
+    &:has(.profile) .header {
+        margin: 0 0 64px;
+
+        @media (width <=460) {
+            margin: 0 0 16px;
+        }
+    }
+}
+
+main {
+    margin: 0 0 160px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    color: var(--color-white);
+}

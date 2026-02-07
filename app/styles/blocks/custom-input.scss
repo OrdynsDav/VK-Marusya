@@ -1,0 +1,43 @@
+.custom-input {
+    width: 100%;
+    height: 56px;
+    border: 1px solid var(--color-black-2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    gap: 12px;
+    overflow: hidden;
+
+    &--error {
+        border: 1px solid var(--color-salmon);
+
+        .custom-input__icon {
+            color: var(--color-salmon);
+        }
+    }
+
+    &__field {
+        border: none;
+        outline: none;
+        height: 100%;
+        width: 100%;
+        padding-right: 16px;
+        font-size: 18px;
+        line-height: 24px;
+
+        &::placeholder {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &__label {
+        user-select: none;
+        cursor: text;
+    }
+
+    &__icon {
+        color: var(--color-black-2);
+    }
+}

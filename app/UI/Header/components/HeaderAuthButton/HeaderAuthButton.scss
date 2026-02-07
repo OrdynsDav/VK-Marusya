@@ -1,0 +1,24 @@
+@use "../../../../styles/global/mixins.scss" as *;
+
+.header__btn {
+    font-size: 24px;
+    line-height: 32px;
+    white-space: nowrap;
+    border-bottom: 1.5px solid transparent;
+    transition: border-bottom 0.3s ease-in;
+    text-align: center;
+    padding: 8px 0;
+
+    @include vp-1024 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    @media (width <=800) {
+        display: none;
+    }
+
+    &--active {
+        border-bottom: 1.5px solid var(--color-heliotrope);
+    }
+}

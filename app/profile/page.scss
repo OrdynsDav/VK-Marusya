@@ -1,0 +1,48 @@
+.profile {
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 0 64px;
+
+    @media (width <=460) {
+      margin: 0 0 40px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+    margin: 0 0 64px;
+
+    @media (width <=460) {
+      gap: 24px;
+      margin: 0 0 40px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1.5px solid transparent;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition:
+      border-bottom 0.4s ease;
+
+    &--active {
+      border-bottom: 1.5px solid var(--color-heliotrope);
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,51 @@
+@use "../../styles/global/mixins.scss" as *;
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 22px;
+    border-radius: 28px;
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+
+    &-primary {
+        background-color: var(--primary-btn-color);
+        transition: background-color var(--transition);
+
+        &:is(:focus-visible, :hover) {
+            background-color: var(--color-east-bay);
+        }
+    }
+
+    &-secondary {
+        background-color: var(--color-montana);
+        transition: background-color var(--transition);
+
+        &:is(:focus-visible, :hover) {
+            background-color: var(--color-dim-gray);
+        }
+    }
+
+    &-small {
+        min-width: 68px;
+        min-height: 56px;
+    }
+
+    &-medium {
+        padding: 16px 48px;
+        min-width: 167px;
+
+        @include vp-1024 {
+            padding: 16px 40px;
+        };
+    }
+
+    &-large {
+        width: 100%;
+        text-align: center;
+    }
+}
